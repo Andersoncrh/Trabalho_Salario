@@ -42,12 +42,14 @@
             this.txtrg = new System.Windows.Forms.MaskedTextBox();
             this.txtcpf = new System.Windows.Forms.MaskedTextBox();
             this.txtnascimento = new System.Windows.Forms.MaskedTextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lstfilho
             // 
             this.lstfilho.FormattingEnabled = true;
-            this.lstfilho.Location = new System.Drawing.Point(21, 259);
+            this.lstfilho.Location = new System.Drawing.Point(67, 242);
             this.lstfilho.Name = "lstfilho";
             this.lstfilho.Size = new System.Drawing.Size(120, 95);
             this.lstfilho.TabIndex = 41;
@@ -55,7 +57,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 243);
+            this.label1.Location = new System.Drawing.Point(64, 226);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(107, 13);
             this.label1.TabIndex = 40;
@@ -63,12 +65,13 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(396, 243);
+            this.button1.Location = new System.Drawing.Point(402, 239);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(176, 96);
             this.button1.TabIndex = 39;
             this.button1.Text = "CALCULAR";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // chkinvalido
             // 
@@ -78,7 +81,7 @@
             this.chkinvalido.Items.AddRange(new object[] {
             "Sim",
             "Não"});
-            this.chkinvalido.Location = new System.Drawing.Point(19, 147);
+            this.chkinvalido.Location = new System.Drawing.Point(10, 134);
             this.chkinvalido.MultiColumn = true;
             this.chkinvalido.Name = "chkinvalido";
             this.chkinvalido.Size = new System.Drawing.Size(250, 19);
@@ -96,7 +99,7 @@
             // 
             // btnfilho
             // 
-            this.btnfilho.Location = new System.Drawing.Point(84, 182);
+            this.btnfilho.Location = new System.Drawing.Point(75, 169);
             this.btnfilho.Name = "btnfilho";
             this.btnfilho.Size = new System.Drawing.Size(102, 39);
             this.btnfilho.TabIndex = 36;
@@ -106,7 +109,7 @@
             // 
             // txtnome
             // 
-            this.txtnome.Location = new System.Drawing.Point(19, 50);
+            this.txtnome.Location = new System.Drawing.Point(10, 37);
             this.txtnome.Name = "txtnome";
             this.txtnome.Size = new System.Drawing.Size(100, 20);
             this.txtnome.TabIndex = 32;
@@ -114,7 +117,7 @@
             // lblnascimento
             // 
             this.lblnascimento.AutoSize = true;
-            this.lblnascimento.Location = new System.Drawing.Point(163, 81);
+            this.lblnascimento.Location = new System.Drawing.Point(154, 68);
             this.lblnascimento.Name = "lblnascimento";
             this.lblnascimento.Size = new System.Drawing.Size(104, 13);
             this.lblnascimento.TabIndex = 31;
@@ -132,7 +135,7 @@
             // lblrg
             // 
             this.lblrg.AutoSize = true;
-            this.lblrg.Location = new System.Drawing.Point(163, 34);
+            this.lblrg.Location = new System.Drawing.Point(154, 21);
             this.lblrg.Name = "lblrg";
             this.lblrg.Size = new System.Drawing.Size(23, 13);
             this.lblrg.TabIndex = 29;
@@ -149,7 +152,7 @@
             // 
             // txtrg
             // 
-            this.txtrg.Location = new System.Drawing.Point(166, 50);
+            this.txtrg.Location = new System.Drawing.Point(157, 37);
             this.txtrg.Mask = "00,000,000-0";
             this.txtrg.Name = "txtrg";
             this.txtrg.Size = new System.Drawing.Size(100, 20);
@@ -157,7 +160,7 @@
             // 
             // txtcpf
             // 
-            this.txtcpf.Location = new System.Drawing.Point(21, 97);
+            this.txtcpf.Location = new System.Drawing.Point(12, 84);
             this.txtcpf.Mask = "000,000,000-00";
             this.txtcpf.Name = "txtcpf";
             this.txtcpf.Size = new System.Drawing.Size(100, 20);
@@ -165,34 +168,46 @@
             // 
             // txtnascimento
             // 
-            this.txtnascimento.Location = new System.Drawing.Point(166, 97);
+            this.txtnascimento.Location = new System.Drawing.Point(157, 84);
             this.txtnascimento.Mask = "00/00/0000";
             this.txtnascimento.Name = "txtnascimento";
             this.txtnascimento.Size = new System.Drawing.Size(100, 20);
             this.txtnascimento.TabIndex = 44;
             this.txtnascimento.ValidatingType = typeof(System.DateTime);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txtnascimento);
+            this.groupBox1.Controls.Add(this.txtcpf);
+            this.groupBox1.Controls.Add(this.txtrg);
+            this.groupBox1.Controls.Add(this.lstfilho);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.chkinvalido);
+            this.groupBox1.Controls.Add(this.btnfilho);
+            this.groupBox1.Controls.Add(this.txtnome);
+            this.groupBox1.Controls.Add(this.lblnascimento);
+            this.groupBox1.Controls.Add(this.lblrg);
+            this.groupBox1.Location = new System.Drawing.Point(17, 13);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(274, 350);
+            this.groupBox1.TabIndex = 49;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Inserir Filhos";
+            // 
             // FormEmpregado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(695, 372);
-            this.Controls.Add(this.txtnascimento);
-            this.Controls.Add(this.txtcpf);
-            this.Controls.Add(this.txtrg);
-            this.Controls.Add(this.lstfilho);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.chkinvalido);
             this.Controls.Add(this.lblinvalido);
-            this.Controls.Add(this.btnfilho);
-            this.Controls.Add(this.txtnome);
-            this.Controls.Add(this.lblnascimento);
             this.Controls.Add(this.lblcpf);
-            this.Controls.Add(this.lblrg);
             this.Controls.Add(this.lblnome);
             this.Name = "FormEmpregado";
             this.Text = "FormEmpregado";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,5 +229,6 @@
         private System.Windows.Forms.MaskedTextBox txtrg;
         private System.Windows.Forms.MaskedTextBox txtcpf;
         private System.Windows.Forms.MaskedTextBox txtnascimento;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

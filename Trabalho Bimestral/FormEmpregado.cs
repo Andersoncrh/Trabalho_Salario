@@ -89,5 +89,11 @@ namespace Trabalho_Bimestral
                 if (ix != e.Index) chkinvalido.SetItemChecked(ix, false);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Size = new Size(900, 410);
+
+        }
     }
 }

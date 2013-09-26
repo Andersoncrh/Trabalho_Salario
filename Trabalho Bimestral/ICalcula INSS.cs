@@ -7,5 +7,6 @@ namespace Trabalho_Bimestral
 {
     interface ICalcula_INSS
     {
+
     }
 }

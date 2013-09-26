@@ -56,60 +56,70 @@ namespace Trabalho_Bimestral
         {
             if (tipo == 0)
             {
+                Label lblfaltas = new Label();
+                lblfaltas.Parent = f;
+                lblfaltas.Location = new System.Drawing.Point(433, 42);
+                lblfaltas.Text = ("Número de Faltas");
+                lblfaltas.Size = new System.Drawing.Size(90, 13);
+                TextBox txtfaltas = new TextBox();
+                txtfaltas.Parent = f;
+                txtfaltas.Location = new System.Drawing.Point(436, 58);
+
                 Label lblsalario = new Label();
                 lblsalario.Parent = f;
-                lblsalario.Location = new System.Drawing.Point(314, 34);
+                lblsalario.Location = new System.Drawing.Point(433, 104);
                 lblsalario.Text = ("Salário Mensal");
                 lblsalario.Size = new System.Drawing.Size(76, 13);
                 TextBox txtsalario = new TextBox();
                 txtsalario.Parent = f;
-                txtsalario.Location = new System.Drawing.Point(317, 50);
+                txtsalario.Location = new System.Drawing.Point(436, 120);
+
                 Label lblhoraextra = new Label();
                 lblhoraextra.Parent = f;
-                lblhoraextra.Location = new System.Drawing.Point(314, 81);
+                lblhoraextra.Location = new System.Drawing.Point(433, 166);
                 lblhoraextra.Text = ("Horas Extras");
                 lblhoraextra.Size = new System.Drawing.Size(70, 13);
                 TextBox txthoraextra = new TextBox();
                 txthoraextra.Parent = f;
-                txthoraextra.Location = new System.Drawing.Point(317, 97);
+                txthoraextra.Location = new System.Drawing.Point(436, 182);
             }
             else if (tipo == 1)
             {
                 Label lblsalariohora = new Label();
                 lblsalariohora.Parent = f;
-                lblsalariohora.Location = new System.Drawing.Point(314, 34);
+                lblsalariohora.Location = new System.Drawing.Point(433, 104);
                 lblsalariohora.Text = ("Valor da Hora Trabalhada");
                 lblsalariohora.Size = new System.Drawing.Size(200, 13);
                 TextBox txtsalariohora = new TextBox();
                 txtsalariohora.Parent = f;
-                txtsalariohora.Location = new System.Drawing.Point(317, 50);
+                txtsalariohora.Location = new System.Drawing.Point(436, 120);
                 Label lblhorastrabalhadas = new Label();
                 lblhorastrabalhadas.Parent = f;
-                lblhorastrabalhadas.Location = new System.Drawing.Point(314, 81);
+                lblhorastrabalhadas.Location = new System.Drawing.Point(433, 166);
                 lblhorastrabalhadas.Text = ("Horas Trabalhadas");
                 lblhorastrabalhadas.Size = new System.Drawing.Size(100, 13);
                 TextBox txthorastrabalhadas = new TextBox();
                 txthorastrabalhadas.Parent = f;
-                txthorastrabalhadas.Location = new System.Drawing.Point(317, 97);
+                txthorastrabalhadas.Location = new System.Drawing.Point(436, 182);
             }
             else
             {
                 Label lblvalorvendido = new Label();
                 lblvalorvendido.Parent = f;
-                lblvalorvendido.Location = new System.Drawing.Point(314, 34);
+                lblvalorvendido.Location = new System.Drawing.Point(433, 104);
                 lblvalorvendido.Text = ("Valor Vendido");
                 lblvalorvendido.Size = new System.Drawing.Size(100, 13);
                 TextBox txtvalorvendido = new TextBox();
                 txtvalorvendido.Parent = f;
-                txtvalorvendido.Location = new System.Drawing.Point(317, 50);
+                txtvalorvendido.Location = new System.Drawing.Point(436, 120);
                 Label lbltaxadecomissao = new Label();
                 lbltaxadecomissao.Parent = f;
-                lbltaxadecomissao.Location = new System.Drawing.Point(314, 81);
+                lbltaxadecomissao.Location = new System.Drawing.Point(433, 166);
                 lbltaxadecomissao.Text = ("Taxa de Comissão");
                 lbltaxadecomissao.Size = new System.Drawing.Size(100, 13);
                 TextBox txttaxadecomissao = new TextBox();
                 txttaxadecomissao.Parent = f;
-                txttaxadecomissao.Location = new System.Drawing.Point(317, 97);
+                txttaxadecomissao.Location = new System.Drawing.Point(436, 182);
  
             }
 
