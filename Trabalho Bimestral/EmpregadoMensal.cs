@@ -6,10 +6,10 @@ using System.Windows.Forms;
 
 namespace Trabalho_Bimestral
 {
-    public class EmpregadoMensal:Empregado
+    public class EmpregadoMensal : Empregado,ICalcula_Salario_Bruto
     {
-        public float SalarioMensal, HorasExtras;
-        float CalculaFaltas(float faltas) 
+        public float SalarioMensal, HorasExtras, faltas;        
+        float CalculaFaltas() 
         { 
             return (faltas * (SalarioMensal / 30)); 
         }
@@ -34,12 +34,11 @@ namespace Trabalho_Bimestral
             } 
             else { inss = 3038.99 * 0.11; } 
             return inss; 
+        }
+        public float CalculaSalarioBruto()
+        {
+            return SalarioMensal + CalculaHorasExtras() - CalculaFaltas();            
         } 
-        //public float CalculaSalarioBruto(float bruto) 
-        //{ 
-        //    bruto = SalarioMensal + CalculaHoras() - CalculaFalta(); 
-        //    return bruto; 
-        //} 
         //public float CalculaSalarioFamilia() 
         //{ 
         //    return SalarioMensal; 
@@ -48,8 +47,6 @@ namespace Trabalho_Bimestral
         //{ 
         //    return bruto - inss + CalculaSalarioFamilia(); 
         //} 
-        
-        
-
+                
     }
 }

@@ -7,5 +7,6 @@ namespace Trabalho_Bimestral
 {
     interface ICalcula_Salario_Familia
     {
+        void CalculaSalarioFamilia();
     }
 }

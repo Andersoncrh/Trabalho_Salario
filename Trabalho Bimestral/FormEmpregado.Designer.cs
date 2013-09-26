@@ -52,7 +52,7 @@
             this.lstfilho.Location = new System.Drawing.Point(67, 242);
             this.lstfilho.Name = "lstfilho";
             this.lstfilho.Size = new System.Drawing.Size(120, 95);
-            this.lstfilho.TabIndex = 41;
+            this.lstfilho.TabIndex = 6;
             // 
             // label1
             // 
@@ -85,7 +85,7 @@
             this.chkinvalido.MultiColumn = true;
             this.chkinvalido.Name = "chkinvalido";
             this.chkinvalido.Size = new System.Drawing.Size(250, 19);
-            this.chkinvalido.TabIndex = 38;
+            this.chkinvalido.TabIndex = 4;
             this.chkinvalido.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.chkinvalido_ItemCheck);
             // 
             // lblinvalido
@@ -102,7 +102,7 @@
             this.btnfilho.Location = new System.Drawing.Point(75, 169);
             this.btnfilho.Name = "btnfilho";
             this.btnfilho.Size = new System.Drawing.Size(102, 39);
-            this.btnfilho.TabIndex = 36;
+            this.btnfilho.TabIndex = 5;
             this.btnfilho.Text = "Inserir Filho";
             this.btnfilho.UseVisualStyleBackColor = true;
             this.btnfilho.Click += new System.EventHandler(this.btnfilho_Click);
@@ -112,7 +112,7 @@
             this.txtnome.Location = new System.Drawing.Point(10, 37);
             this.txtnome.Name = "txtnome";
             this.txtnome.Size = new System.Drawing.Size(100, 20);
-            this.txtnome.TabIndex = 32;
+            this.txtnome.TabIndex = 0;
             // 
             // lblnascimento
             // 
@@ -156,7 +156,7 @@
             this.txtrg.Mask = "00,000,000-0";
             this.txtrg.Name = "txtrg";
             this.txtrg.Size = new System.Drawing.Size(100, 20);
-            this.txtrg.TabIndex = 42;
+            this.txtrg.TabIndex = 1;
             // 
             // txtcpf
             // 
@@ -164,7 +164,7 @@
             this.txtcpf.Mask = "000,000,000-00";
             this.txtcpf.Name = "txtcpf";
             this.txtcpf.Size = new System.Drawing.Size(100, 20);
-            this.txtcpf.TabIndex = 43;
+            this.txtcpf.TabIndex = 2;
             // 
             // txtnascimento
             // 
@@ -172,7 +172,7 @@
             this.txtnascimento.Mask = "00/00/0000";
             this.txtnascimento.Name = "txtnascimento";
             this.txtnascimento.Size = new System.Drawing.Size(100, 20);
-            this.txtnascimento.TabIndex = 44;
+            this.txtnascimento.TabIndex = 3;
             this.txtnascimento.ValidatingType = typeof(System.DateTime);
             // 
             // groupBox1
