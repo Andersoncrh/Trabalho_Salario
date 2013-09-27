@@ -1,35 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Trabalho_Bimestral.Empregado">
-    <Position X="2" Y="1.5" Width="1.5" />
+    <Position X="1.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAIAAAAAAAAAAAAgAIAAAAAAAAAABAAAAAAEAAAAA=</HashCode>
+      <HashCode>AAAAIAAAAAAAAAAAAgAIAAAAAAAAAABAAAAAAECAAAA=</HashCode>
       <FileName>Empregado.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Trabalho_Bimestral.EmpregadoComissionado">
     <Position X="0.5" Y="4.25" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAIAAAAQAAAAAAAAAACAAAAAAAAAAAQAAAEAACA=</HashCode>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAQABQ=</HashCode>
       <FileName>EmpregadoComissionado.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.1" />
   </Class>
   <Class Name="Trabalho_Bimestral.EmpregadoHorista">
-    <Position X="2.75" Y="4.25" Width="1.75" />
+    <Position X="3.5" Y="4.25" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAACAIAAAAAAAAAAAAAAACAAAAAAAAAAAQAAAEAACA=</HashCode>
+      <HashCode>AAAACABAAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAQACA=</HashCode>
       <FileName>EmpregadoHorista.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Trabalho_Bimestral.EmpregadoMensal">
-    <Position X="5" Y="3.5" Width="1.75" />
+    <Position X="5.75" Y="3.75" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAIIAAQABAAAAAAAAACAAAAAAAAAAAQAQAEAAAA=</HashCode>
+      <HashCode>AAAAAABIAAQABAAAAAAAAAAAAAAAAAAAhAAAQAAQAQA=</HashCode>
       <FileName>EmpregadoMensal.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Trabalho_Bimestral.Filhos">
-    <Position X="5.75" Y="1.5" Width="1.5" />
+    <Position X="6" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
       <FileName>Filhos.cs</FileName>
@@ -38,7 +41,7 @@
   <Class Name="Trabalho_Bimestral.FormPrincipal" Collapsed="true">
     <Position X="9.75" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ACAAAAQAECAABB0AgAihAAgSABAogAgAIEUAEAAEAAA=</HashCode>
+      <HashCode>ACAAAAAAECAgABoAgAihAAgCADAogAgAIQEAEAAEAAA=</HashCode>
       <FileName>FormPrincipal.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -71,7 +74,7 @@
   <Class Name="Trabalho_Bimestral.FormEmpregado" Collapsed="true">
     <Position X="9.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ECAABAgAECAAABAAAAKAAIgHAhAoAAgQIAAAAAAECAA=</HashCode>
+      <HashCode>EGAABQAQECAAAZQAAAKACMiGAhAoAAgQJmAQACCEAIA=</HashCode>
       <FileName>FormEmpregado.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -99,28 +102,28 @@
   <Interface Name="Trabalho_Bimestral.ICalcula_INSS" Collapsed="true">
     <Position X="9.75" Y="5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ICalcula INSS.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Trabalho_Bimestral.ICalcula_Salario_Bruto" Collapsed="true">
     <Position X="11.5" Y="5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>ICalcula Salario Bruto.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Trabalho_Bimestral.ICalcula_Salario_Familia" Collapsed="true">
     <Position X="13.25" Y="5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
       <FileName>ICalcula Salario Familia.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Trabalho_Bimestral.ICalcula_Salario_Liquido" Collapsed="true">
     <Position X="9.75" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
       <FileName>ICalcula Salario Liquido.cs</FileName>
     </TypeIdentifier>
   </Interface>
