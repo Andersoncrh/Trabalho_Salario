@@ -39,6 +39,10 @@
             this.txtnascimento = new System.Windows.Forms.MaskedTextBox();
             this.txtcpf = new System.Windows.Forms.MaskedTextBox();
             this.txtrg = new System.Windows.Forms.MaskedTextBox();
+            this.txtdataadmissao = new System.Windows.Forms.MaskedTextBox();
+            this.lbldataadmissao = new System.Windows.Forms.Label();
+            this.txtcarteiratrabalho = new System.Windows.Forms.TextBox();
+            this.lblcarteiratrabalho = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblnome
@@ -82,14 +86,14 @@
             this.txtnome.Location = new System.Drawing.Point(109, 59);
             this.txtnome.Name = "txtnome";
             this.txtnome.Size = new System.Drawing.Size(100, 20);
-            this.txtnome.TabIndex = 5;
+            this.txtnome.TabIndex = 1;
             // 
             // btniniciar
             // 
-            this.btniniciar.Location = new System.Drawing.Point(256, 181);
+            this.btniniciar.Location = new System.Drawing.Point(252, 219);
             this.btniniciar.Name = "btniniciar";
             this.btniniciar.Size = new System.Drawing.Size(156, 59);
-            this.btniniciar.TabIndex = 10;
+            this.btniniciar.TabIndex = 8;
             this.btniniciar.Text = "Iniciar";
             this.btniniciar.UseVisualStyleBackColor = true;
             this.btniniciar.Click += new System.EventHandler(this.btniniciar_Click);
@@ -97,7 +101,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(146, 114);
+            this.label1.Location = new System.Drawing.Point(146, 148);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 13);
             this.label1.TabIndex = 10;
@@ -114,11 +118,11 @@
             "Mensalista",
             "Horista",
             "Comissionado"});
-            this.chksalario.Location = new System.Drawing.Point(149, 130);
+            this.chksalario.Location = new System.Drawing.Point(149, 164);
             this.chksalario.MultiColumn = true;
             this.chksalario.Name = "chksalario";
             this.chksalario.Size = new System.Drawing.Size(374, 19);
-            this.chksalario.TabIndex = 9;
+            this.chksalario.TabIndex = 7;
             this.chksalario.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListBox1_ItemCheck);
             // 
             // txtnascimento
@@ -127,7 +131,7 @@
             this.txtnascimento.Mask = "00/00/0000";
             this.txtnascimento.Name = "txtnascimento";
             this.txtnascimento.Size = new System.Drawing.Size(100, 20);
-            this.txtnascimento.TabIndex = 8;
+            this.txtnascimento.TabIndex = 4;
             this.txtnascimento.ValidatingType = typeof(System.DateTime);
             // 
             // txtcpf
@@ -136,7 +140,7 @@
             this.txtcpf.Mask = "000,000,000-00";
             this.txtcpf.Name = "txtcpf";
             this.txtcpf.Size = new System.Drawing.Size(100, 20);
-            this.txtcpf.TabIndex = 7;
+            this.txtcpf.TabIndex = 3;
             // 
             // txtrg
             // 
@@ -144,13 +148,51 @@
             this.txtrg.Mask = "00,000,000-0";
             this.txtrg.Name = "txtrg";
             this.txtrg.Size = new System.Drawing.Size(100, 20);
-            this.txtrg.TabIndex = 6;
+            this.txtrg.TabIndex = 2;
+            // 
+            // txtdataadmissao
+            // 
+            this.txtdataadmissao.Location = new System.Drawing.Point(344, 104);
+            this.txtdataadmissao.Mask = "00/00/0000";
+            this.txtdataadmissao.Name = "txtdataadmissao";
+            this.txtdataadmissao.Size = new System.Drawing.Size(100, 20);
+            this.txtdataadmissao.TabIndex = 6;
+            this.txtdataadmissao.ValidatingType = typeof(System.DateTime);
+            // 
+            // lbldataadmissao
+            // 
+            this.lbldataadmissao.AutoSize = true;
+            this.lbldataadmissao.Location = new System.Drawing.Point(341, 88);
+            this.lbldataadmissao.Name = "lbldataadmissao";
+            this.lbldataadmissao.Size = new System.Drawing.Size(93, 13);
+            this.lbldataadmissao.TabIndex = 11;
+            this.lbldataadmissao.Text = "Data de Admissão";
+            // 
+            // txtcarteiratrabalho
+            // 
+            this.txtcarteiratrabalho.Location = new System.Drawing.Point(226, 104);
+            this.txtcarteiratrabalho.Name = "txtcarteiratrabalho";
+            this.txtcarteiratrabalho.Size = new System.Drawing.Size(100, 20);
+            this.txtcarteiratrabalho.TabIndex = 5;
+            // 
+            // lblcarteiratrabalho
+            // 
+            this.lblcarteiratrabalho.AutoSize = true;
+            this.lblcarteiratrabalho.Location = new System.Drawing.Point(222, 88);
+            this.lblcarteiratrabalho.Name = "lblcarteiratrabalho";
+            this.lblcarteiratrabalho.Size = new System.Drawing.Size(103, 13);
+            this.lblcarteiratrabalho.TabIndex = 13;
+            this.lblcarteiratrabalho.Text = "Carteira de Trabalho";
             // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(669, 283);
+            this.ClientSize = new System.Drawing.Size(669, 323);
+            this.Controls.Add(this.txtcarteiratrabalho);
+            this.Controls.Add(this.lblcarteiratrabalho);
+            this.Controls.Add(this.txtdataadmissao);
+            this.Controls.Add(this.lbldataadmissao);
             this.Controls.Add(this.txtrg);
             this.Controls.Add(this.txtcpf);
             this.Controls.Add(this.txtnascimento);
@@ -182,6 +224,10 @@
         private System.Windows.Forms.MaskedTextBox txtnascimento;
         private System.Windows.Forms.MaskedTextBox txtcpf;
         private System.Windows.Forms.MaskedTextBox txtrg;
+        private System.Windows.Forms.MaskedTextBox txtdataadmissao;
+        private System.Windows.Forms.Label lbldataadmissao;
+        private System.Windows.Forms.TextBox txtcarteiratrabalho;
+        private System.Windows.Forms.Label lblcarteiratrabalho;
 
 
 

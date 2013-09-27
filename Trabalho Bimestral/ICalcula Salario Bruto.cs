@@ -7,6 +7,6 @@ namespace Trabalho_Bimestral
 {
     interface ICalcula_Salario_Bruto
     {
-        float CalculaSalarioBruto();
+        double CalculaSalarioBruto();
     }
 }

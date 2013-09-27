@@ -7,6 +7,6 @@ namespace Trabalho_Bimestral
 {
     interface ICalcula_Salario_Liquido
     {
-        void CalculaSalarioLiquido();
+        double CalculaSalarioLiquido();
     }
 }

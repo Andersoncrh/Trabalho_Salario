@@ -65,7 +65,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(402, 239);
+            this.button1.Location = new System.Drawing.Point(396, 239);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(176, 96);
             this.button1.TabIndex = 39;
@@ -198,7 +198,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(695, 372);
+            this.ClientSize = new System.Drawing.Size(670, 372);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblinvalido);

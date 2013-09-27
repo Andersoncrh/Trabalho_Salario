@@ -6,47 +6,63 @@ using System.Windows.Forms;
 
 namespace Trabalho_Bimestral
 {
-    public class EmpregadoMensal : Empregado,ICalcula_Salario_Bruto
+    public class EmpregadoMensal : Empregado,ICalcula_Salario_Bruto,ICalcula_Salario_Familia,ICalcula_Salario_Liquido,ICalcula_INSS
     {
-        public float SalarioMensal, HorasExtras, faltas;        
-        float CalculaFaltas() 
-        { 
-            return (faltas * (SalarioMensal / 30)); 
-        }
-        float CalculaHorasExtras()
-        {
-            return (HorasExtras * ((SalarioMensal / 30) / 8));
-        }
-        public double CalcularInss(float bruto)
-        {
-            double inss;
-            if (bruto < 911.7) 
+        //ATRIBUTOS DA CLASSE
+            public double SalarioMensal, HorasExtras, faltas;
+        //#########
+        //METODOS DA CLASSE
+            double CalculaFaltas() 
             { 
-                inss = (bruto * 0.08); 
-            } 
-            else if ((bruto > 911.7) && (bruto < 1519.5)) 
+                return (faltas * (SalarioMensal / 30)); 
+            }
+            double CalculaHorasExtras()
+            {
+                return (HorasExtras * ((SalarioMensal / 30) / 8));
+            }
+        //###################
+        //METODOS HERDADOS DAS INTERFACES
+            public double CalculaSalarioBruto()
+            {
+                return SalarioMensal + CalculaHorasExtras() - CalculaFaltas();
+            }
+            public double CalculaInss()
+            {
+                double inss;
+                if (CalculaSalarioBruto() < 911.7) 
+                {
+                    inss = (CalculaSalarioBruto() * 0.08); 
+                }
+                else if ((CalculaSalarioBruto() > 911.7) && (CalculaSalarioBruto() < 1519.5)) 
+                {
+                    inss = (CalculaSalarioBruto() * 0.09);
+                }
+                else if ((CalculaSalarioBruto() > 1519) && (CalculaSalarioBruto() < 3038.99)) 
+                {
+                    inss = (CalculaSalarioBruto() * 0.11); 
+                } 
+                else { inss = 3038.99 * 0.11; } 
+                return inss; 
+            }
+            public double CalculaSalarioFamilia() 
             { 
-                inss = (bruto * 0.09);
-            } 
-            else if ((bruto > 1519) && (bruto < 3038.99)) 
+                double auxilio;
+                if (CalculaSalarioBruto() < 646.55)
+                {
+                    auxilio = (invalidos * 33.16);
+                }
+                else if ((CalculaSalarioBruto() >= 646.55) && (CalculaSalarioBruto() < 971.78))
+                {
+                    auxilio = (invalidos * 23.36);
+                }
+                else 
+                    auxilio = 0;
+                return auxilio; 
+            }
+            public double CalculaSalarioLiquido() 
             { 
-                inss = (bruto * 0.11); 
+                return CalculaSalarioBruto() - CalculaInss() + CalculaSalarioFamilia(); 
             } 
-            else { inss = 3038.99 * 0.11; } 
-            return inss; 
-        }
-        public float CalculaSalarioBruto()
-        {
-            return SalarioMensal + CalculaHorasExtras() - CalculaFaltas();            
-        } 
-        //public float CalculaSalarioFamilia() 
-        //{ 
-        //    return SalarioMensal; 
-        //} 
-        //public double CalcularSalarioLiquido() 
-        //{ 
-        //    return bruto - inss + CalculaSalarioFamilia(); 
-        //} 
-                
+        //##############                
     }
 }
